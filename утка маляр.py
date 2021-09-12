@@ -8,13 +8,45 @@ from IPython.display import Image
 
 
 def step2_no_umbrella():
-    print('\n\n\nя же заболею ты че')
-    display(Image(url='https://cs11.pikabu.ru/post_img/2018/12/17/8/1545050494117988750.jpg', width=500))
+    print(
+        '\nА на улице 🌃 есть дождик? 💦'
+    )
+    option = ''
+    options = {'да': True, 'нет': False}
+    while option not in options:
+        print('Выберите: {}/{}'.format(*options))
+        option = input()
+    if options[option]:
+        print('\n\nя же заболею ты че')
+        display(Image(
+            url='https://bit.ly/3lkXUKD',
+            width=400))
+    else:
+        print('\n\nооо тогда пойду нажруся')
+        display(Image(
+            url='https://bit.ly/3nsEC90',
+            width=400))
 
 
 def step2_umbrella():
-    print('\n\n\nкаеф не заболею')
-    display(Image(url='https://www.meme-arsenal.com/memes/60e72b470dad02bbdbadeaa48faf2642.jpg', width=500))
+    print(
+        '\nА на улице 🌃 есть дождик? 💦'
+    )
+    option = ''
+    options = {'да': True, 'нет': False}
+    while option not in options:
+        print('Выберите: {}/{}'.format(*options))
+        option = input()
+    if options[option]:
+        print('\n\nок пойду нажруся')
+        display(Image(
+            url='https://bit.ly/3tBSvTj',
+            width=400))
+    else:
+        print('\n\nтогда зачем мне зонтик лее ты чее ээ')
+        display(Image(
+            url='https://bit.ly/2YRu60Q',
+            width=400))
 
 
 def step1():
